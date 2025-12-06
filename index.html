@@ -28,7 +28,7 @@
     }
 
     h1 {
-      font-size: 2.1rem;
+      font-size: 1.8rem;
       margin-bottom: 5px;
     }
 
@@ -42,30 +42,33 @@
 
     /* Header layout */
     .header {
-      display: flex;
-      gap: 24px;
-      align-items: center;
+      display: block;
       margin-bottom: 30px;
-      flex-wrap: wrap;
     }
 
     .header img {
-      width: 135px;
-      height: 135px;
+      width: 240px;
+      height: 240px;
       border-radius: 8px;
       object-fit: cover;
+      float: left;
+      margin-right: 24px;
+      margin-bottom: 12px;
     }
 
-    .subtitle {
-      color: #555;
-      font-size: 1rem;
+    .header > div {
+      overflow: hidden;
+    }
+
+    .header > div h1 {
+      margin-top: 0;
     }
 
     /* Lists */
     ul {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0;    
     }
 
     li {
@@ -118,9 +121,13 @@
       }
 
       .header img {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
       }
+    }
+
+    #papers {
+      clear: both;
     }
   </style>
 </head>
@@ -130,27 +137,19 @@
 
     <!-- HEADER -->
     <header class="header">
-      <img src="images/profile.jpeg" alt="Photo of Richard Goldman" />
+      <img src="images/profile.jpg" alt="Photo of Richard Goldman" />
 
       <div>
         <h1>Richard Goldman</h1>
-        <div class="subtitle">
-          Research Engineer · Machine Learning · Optimization · Quant Finance
-        </div>
         <p style="margin-top: 10px;">
-          I am a research engineer in New York City working on equity risk models
-          and portfolio optimization, while completing the Machine Learning specialization in
-          Georgia Tech's OMSCS program. My research interests focus on
-          <strong>representation learning</strong>, <strong>robust ML</strong>, and
-          <strong>stochastic optimization</strong> in high-stakes domains such as finance
-          and wearable sensing.
+          I'm a master's student at Georgia Tech studying Computer Science. I am interested in building explainable and robust machine learning models for high-stakes domains.
         </p>
       </div>
     </header>
 
     <!-- PAPERS -->
     <section id="papers">
-      <h2>Research Papers</h2>
+      <h2>Research</h2>
 
       <ul>
         <li>
@@ -172,7 +171,7 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2>Selected Project</h2>
+      <h2>Fun Projects</h2>
 
       <ul>
         <li>
@@ -180,9 +179,6 @@
             <a href="https://scriptsolutionsgroup.com/" target="_blank">
               Proverse — Cancer Outcomes Platform
             </a>
-          </div>
-          <div class="item-meta">
-            Founding Engineer · 2023–2025
           </div>
           <div class="item-desc">
             Co-founded a health-tech startup with an oncologist to improve cancer patient outcomes.
@@ -197,14 +193,9 @@
     <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>
-        For research discussions or collaboration inquiries:
-      </p>
       <p class="contact">
-        <a href="mailto:ragoldman8@gmail.com">Email</a>
-        <a href="https://github.com/rgold5950" target="_blank">GitHub</a>
-        <a href="#" target="_blank">Google Scholar</a>
-        <a href="#" target="_blank">LinkedIn</a>
+        <a href="mailto:rgoldman8@gatech.edu">Email</a>
+        <a href="https://github.com/rgold5950/" target="_blank">GitHub</a>
       </p>
     </section>
 
